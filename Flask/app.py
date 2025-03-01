@@ -7,6 +7,13 @@ def home():
 @app.route('/login')
 def login():
     return render_template('login.html')
+@app.route('/register')
+def register():
+    return render_template('Register.html')
+
+@app.route('/landingpage')
+def landingpage():
+    return render_template('landingpage.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
